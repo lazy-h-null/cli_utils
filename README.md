@@ -11,4 +11,4 @@ print_separator()
 # Output: ******************************
 ```
 ## Challenge Output
-![Mascot Output](./output.png)
+![Mascot Output](./screenshot.png)
