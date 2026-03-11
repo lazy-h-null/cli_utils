@@ -19,3 +19,41 @@ def print_box(message, char="*"):
     print(char * width)
     print(char + " " + message + " " + char)
     print(char * width)
+
+c = {
+    "white": "\033[97m",
+    "yellow": "\033[93m",
+    "green": "\033[92m",
+    "blue": "\033[94m",
+    "reset": "\033[0m" 
+}
+def print_fishing():
+    lines = [
+    r"                  ////\\\ ",
+    r"                 /////\\\\ ",
+    r"                //__   __\\ ",
+    r"               -| (o \ o) |- ",
+    r"              |d|   c_\   |b| ",
+    r"               -\((\___/))/-                       ___ ",
+    r"                 \ \___/ /                      ||//// ",
+    r"                  \_____/                       | uuu ",
+    r"                  |     |                      /\ _/ ",
+    r"                  /\ ) /\                     /  V | ",
+    r"          _______/\ \ / /\_______            /  /  | ",
+    r"         /         \/V\/         \          /\ /  /V\ ",
+    r"        /           |o|           \        /\ V  |  o\ ",
+    r"       /            | |            \      /  \/\ //###| ",
+    r"      /             |o|             \    /   /o/ |####|> ",
+    r"     /              | |              \  /   / / <|####|> ",
+    r"    /               |o|   _____       \/    \/    \##/ ",
+    r"   /                | |   |   |             /     |##| ",
+    r"  /       /         |o|   |   |  \         /     /_/\_\ ",
+    r" /       /|         | |   |___|  |\       / ",
+    r"/       / |         |o|          | \_____/ "
+]
+    for i in range(0,3):
+        print(f"{c['blue']}{lines[i]}{c['reset']}")
+    for i in range(3, 9):
+        print(f"{c['yellow']}{lines[i]}{c['reset']}")
+    for i in range(9, 21):
+        print(f"{c['green']}{lines[i]}{c['reset']}")

@@ -3,7 +3,8 @@ from cli_utils import (
     print_char_separator, 
     print_custom_separator, 
     print_labeled_separator, 
-    print_box
+    print_box,
+    print_fishing
 )
 
 print_separator()
@@ -21,3 +22,5 @@ print_labeled_separator("DONE", char="-", width=40)
 
 print_box("Hello, World!")
 print_box("You are a Python Developer!")
+
+print_fishing()
